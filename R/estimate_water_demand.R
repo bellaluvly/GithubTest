@@ -33,6 +33,9 @@ estimate_water_demand <- function(tempC, pop, base_demand_per_person = 90, temp_
   # 13 degrees Celcius - average yearly temp across the US 
   water_demand <- pop * base_demand_per_person * (temp_factor ^ (tempC - 13))
   
+  
+  # Return final water demand
+  
   return(water_demand)
 }
 
