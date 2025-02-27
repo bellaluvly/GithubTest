@@ -37,3 +37,4 @@ estimate_water_demand <- function(tempC, pop, base_demand_per_person = 90, temp_
 }
 
 # here is a small edit to my R code for the Git process - HW #3
+# another edit
