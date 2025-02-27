@@ -1,10 +1,12 @@
 #### This function will calculate water demand as a function of population size and temperature
+
+# tempC: Temperature (in Celsius)
+# pop: Population size (in thousands)
+# base_demand_per_person: Average amount in gallons used per person (based on EPA guidelines)
+# temp_factor: 12% increase in water demand per 1 degree Celsius increase (temp multiplier)
+
 estimate_water_demand <- function(tempC, pop, base_demand_per_person = 90, temp_factor = 1.12) {
-  # tempC: Temperature (in Celsius)
-  # pop: Population size (in thousands)
-  # base_demand_per_person: Average amount in gallons used per person (based on EPA guidelines)
-  # temp_factor: 12% increase in water demand per 1 degree Celsius increase (temp multiplier)
-  
+ 
   ### Error Checking ####
   # Check if temperature is valid, between -62 and 56.7
   if(any(tempC < -62 | tempC > 56.7)) {
