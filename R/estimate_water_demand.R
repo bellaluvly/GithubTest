@@ -5,6 +5,7 @@
 # base_demand_per_person: Average amount in gallons used per person (based on EPA guidelines)
 # temp_factor: 12% increase in water demand per 1 degree Celsius increase (temp multiplier)
 
+# Author: Bella.  
 estimate_water_demand <- function(tempC, pop, base_demand_per_person = 90, temp_factor = 1.12) {
  
   ### Error Checking ####
