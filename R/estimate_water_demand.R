@@ -30,7 +30,7 @@ estimate_water_demand <- function(tempC, pop, base_demand_per_person = 90, temp_
   # Calculate the water demand
   # estimated water demand:
   # ... as function of current population size and the base water demand (where water demand increases with temp change.)
-  # temp change 
+  # 13 degrees Celcius - average yearly temp across the US 
   water_demand <- pop * base_demand_per_person * (temp_factor ^ (tempC - 13))
   
   return(water_demand)
